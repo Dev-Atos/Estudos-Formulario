@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Estudos</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="icon-menu"><i class="fas fa-bars"></i></div>
+        <div id="menu" class="menu hide">
+            <a href="#">Home</a>
+            <br>
+            <a href="#">Sobre</a>
+            <br>
+            <a href="#">Cadastro</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h1 id="titulo">Cadastro de Dev's</h1>
+            <p id="subtitulo">Complete suas informações</p>
+        </div><br>
+
+        <form>
+            <fieldset class="grupo">
+                <form>
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" required>
+                    </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label>Em qual lado da programação você desenvolve?</label>
+                <br><br>
+                <label>
+                    <input type="radio" name="devweb" value="frontend">Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Full-Stack
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="senioriedade">Senioriedade</label>
+                <select id="senioriedade">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Pleno">Pleno</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+                
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                <label>Your technologies</label>
+                <br><br>
+                <input type="checkbox" id="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                
+                <input type="checkbox" id="tecnologia2" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                
+                <input type="checkbox" id="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+            </fieldset>
+                </div>
+                
+            <button class="botao">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Rodapé</p>
+        <!--Conteúdo do rodapé-->
+    </footer>
+
+</body>
+<script src="javascript.js"></script>
+
+</html>
